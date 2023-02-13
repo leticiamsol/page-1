@@ -1,69 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-body {
-    background-color: #20364b; 
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    padding: 0 100px 0 100px;
+body {
+  background-color: #20364b; 
+  font-family: 'Poppins', sans-serif;
+  padding: 120px 350px;
+  text-align: center;
+}
+
+img {
+  width: 70px;
+  margin-bottom: 10px;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  color: #65ebe4;
+  font-size: 42px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+p {
+  color: aliceblue;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.email {
+  margin: 30px 0 15px 0;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+a {
+  color: #65ebe4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #20364b; 
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 20px;
+    text-align: center;
   }
 
-  h1 {
-    color: #65ebe4;
-    font-size: 42px;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 25px;
+  img {
+    width: 14%;
   }
 
   p {
-    color: aliceblue;
-    font-size: 20px;
-    margin: 0;
-    font-weight: 300;
-    
-    text-align: center;
-  }
-  
-  img {
-    width: 70px;
+    font-size: 17px;
     margin-bottom: 10px;
   }
 
   .email {
-    margin: 30px 0 15px 0;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 15px;
   }
 
   a {
-    color: #65ebe4;
-    text-decoration: underline;
-    cursor: pointer;
+    font-weight: 500;
   }
+}
 
-  @media(max-width: 500px) {
+/*
 
-    .container {
+
+  @media only screen and (max-width:410px) {
+
+      .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 90vh;
         padding: 0 15px 0 15px;
-    }
-    img {
+      }
+
+      img {
         width: 100px;
-    }
-    h1 {
+      }
+
+      h1 {
         color: #65ebe4;
-        font-size: 25px;
+        font-size: 70px;
         margin: 0;
         padding-top: 10px;
         padding-bottom: 25px;
@@ -71,12 +102,13 @@ body {
     
       p {
         color: aliceblue;
-        font-size: 18px;
+        font-size: 40px;
         margin: 0;
         text-align: center;
       }
 
       p .email {
-        font-size: 15px;
+        font-size: 30px;
       }
+
   }
